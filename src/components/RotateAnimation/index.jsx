@@ -21,7 +21,7 @@ export default function RotateAnimation({
     <ChildComponent
       key={i}
       number={i + 1}
-      animate={{ rotate: -rotation }}
+      animate={{ rotate: -rotation, scale: 1 }}
       duration={duration}
       className={itemClassName}
       style={itemStyle}

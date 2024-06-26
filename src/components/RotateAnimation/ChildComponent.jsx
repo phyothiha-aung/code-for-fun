@@ -11,6 +11,7 @@ const ChildComponent = ({
   return (
     <motion.div
       animate={animate}
+      initial={{ scale: 2.2 }}
       transition={{ duration, easings: "easeIn" }}
       className={`absolute rounded-full w-[50px] h-[50px] bg-green-300 flex justify-center items-center ${className}`}
       style={style}
