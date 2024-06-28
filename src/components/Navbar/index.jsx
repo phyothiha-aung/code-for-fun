@@ -21,7 +21,7 @@ const slideAnimation = {
 };
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [showMenu]);
   return (
     <>
-      <div className="hidden sm:block bg-red-200 h-[70px]">Hello</div>
+      {/* <div className="hidden sm:block bg-red-200 h-[70px]">Hello</div> */}
       <nav className="h-[64px] bg-blue-300 flex items-center px-5 sm:px-10 sticky top-0 z-50 justify-between">
         <div className="">Navbar</div>
         <ul className="hidden sm:flex items-center gap-5">
@@ -49,7 +49,7 @@ const Navbar = () => {
       <motion.div
         variants={slideAnimation}
         animate={showMenu ? "visible" : "invisible"}
-        className="fixed inset-0 bg-cyan-500 max-h-screen min-h-screen z-10"
+        className="fixed sm:hidden inset-0 bg-cyan-500 max-h-screen min-h-screen z-10"
       ></motion.div>
     </>
   );

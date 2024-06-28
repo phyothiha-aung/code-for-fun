@@ -1,4 +1,4 @@
-import RotateAnimation from "@/components/RotateAnimation";
+import RotateAnimation from "../components/RotateAnimation";
 
 export default function Home() {
   return (

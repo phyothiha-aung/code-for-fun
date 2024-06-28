@@ -1,5 +1,8 @@
 import { NextResponse, NextRequest } from "next/server";
-import { parseQueryParam, createPaginatedResponse } from "@/utils/pagination";
+import {
+  parseQueryParam,
+  createPaginatedResponse,
+} from "../../../utils/pagination";
 
 const userList = [
   {
